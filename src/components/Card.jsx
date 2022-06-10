@@ -16,7 +16,7 @@ const Card = ({ id, name, email }) => {
     setTimeout(() => {
         setIsLoading(false)
     }, 1000); // This timer just for simulation (just for testing)
-    return (<div className='tc bg-light-green dib br3 ma2 grow bw-2 shadow-5'>
+    return (<div className='tc bg-light-green dib br3 ma2 grow bw-2 shadow-5 w-25'>
         {isLoading ? <LoadingSpinner /> : cardData}
     </div>);
 }
